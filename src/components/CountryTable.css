@@ -1,0 +1,75 @@
+.country-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 70rem; 
+    margin: 0 auto; 
+}
+.country-card h3 {
+    font-size: 2rem; 
+    font-weight: 700;
+    color: black;   
+    margin-bottom: 1.5rem;
+  }
+  .search-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  #country-search {
+    width: 44%;
+    padding: 0.8rem 2.2rem; 
+    border: 1px solid #ddd; 
+    border-radius: 0.75rem;  
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: 0rem 0.2rem 0.6rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  #country-search::placeholder {
+    font-size: 1rem;
+    color: gray;
+    padding-left: 1rem;
+  }
+  .search-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 2rem;
+    left: 0.8rem;
+  }
+.country-info {
+    background-color: white;
+    width: 100%;
+    max-width: 70rem;
+    border-collapse: collapse; 
+    margin-top: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-align: left;
+}
+
+.country-info th {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.country-info td {
+    font-size: 0.95rem;
+    padding: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .country-info th, .country-info td {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+}

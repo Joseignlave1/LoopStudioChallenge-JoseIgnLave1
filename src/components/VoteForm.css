@@ -1,0 +1,128 @@
+.vote-form {
+    background-color: white;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    max-width: 70rem;
+    width: 100%;
+  }
+  
+  .vote-form h2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .items-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .vote-form input,
+  .vote-form select {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    min-width: 14rem;
+    outline: none;
+  }
+  
+  .vote-form button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vote-form button:hover {
+    background-color: #333;
+  }
+  
+  #country-input {
+    height: 1.6rem;
+  }
+  .invalid-email {
+    border-color: #ff4d4d;
+    color: red;
+  }
+  .email-container {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+  .invalid-email {
+    width: 100%;
+    padding-right: 2.5rem; 
+  }
+  .invalid-email:focus {
+    border-color: #ff4d4d;
+    outline: none;
+  }
+
+  #invalid-message {
+    color: #ff4d4d; 
+    font-size: 0.9rem;
+    position: absolute;
+    margin-top: 6rem;
+  }
+  #email-input {
+    height: 1.6rem;
+  }
+  .warning-icon {
+    position: absolute;
+    right: 1rem;
+    color: red;
+    font-size: 1.2rem;
+  }
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+  }
+
+  .success-message {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+  }
+  
+  .success-icon {
+    color: green;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .items-container {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .vote-form button {
+      margin-left: 0;
+      width: 100%;
+    }
+    #invalid-message {
+        display: none;
+    }
+    .suggestions-list {
+        max-height: 200px;
+      }
+    
+      .suggestions-list li {
+        padding: 1rem; 
+        font-size: 1.1rem; 
+      }
+  }
+  
