@@ -1,4 +1,5 @@
 # Fullstack-challenge
+This was a challenge done during a selection process for the company LoopStudio, in which I developed a FullStack application where users could vote for their favorite countriy. The endpoints of the API were provided by the company
 
 ## Instructions
 
